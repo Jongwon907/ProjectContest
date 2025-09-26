@@ -27,11 +27,15 @@ public class StartActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    public void changeview(){
         ImageButton j_btn_activity = findViewById(R.id.StartButton);
         j_btn_activity.setOnClickListener(v -> {
             Intent intent = new Intent(StartActivity.this, MainActivity.class);
             startActivity(intent);
         });
     }
-    public
+}
+class clicker implements View.OnClickListener{
+    void onClick(View v);
 }
